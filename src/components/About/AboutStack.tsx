@@ -25,8 +25,8 @@ const AboutStack = () => {
                     {stackText}
                 </p>
             </div>
-            {icons.slice(2).map((icon, index) => {
-                const angle = (2 * Math.PI * index) / (icons.length - 2);
+            {icons.slice(3).map((icon, index) => {
+                const angle = (2 * Math.PI * index) / (icons.length - 3);
                 const x = center + radius * Math.cos(angle) - 40;
                 const y = center + radius * Math.sin(angle) - 40;
 
