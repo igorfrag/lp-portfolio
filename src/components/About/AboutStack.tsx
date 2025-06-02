@@ -18,7 +18,12 @@ const AboutStack = () => {
         <div className='relative w-[400px] h-[400px] mx-auto max-sm:w-[300px] max-sm:h-[300px]'>
             <div className='absolute inset-0 border-2 border-gray-500 rounded-full' />
             <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center'>
-                <p>{stackText}</p>
+                <p
+                    className='text-white text-center transition-all duration-500 ease-in-out opacity-0 translate-x-[-10px] animate-fadeIn'
+                    key={stackText}
+                >
+                    {stackText}
+                </p>
             </div>
             {icons.slice(2).map((icon, index) => {
                 const angle = (2 * Math.PI * index) / (icons.length - 2);
