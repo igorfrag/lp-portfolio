@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
     return (
-        <div className=' pt-10 pb-10 flex flex-wrap flex-row  max-xl:flex-col  justify-center items-center gap-10 max-w-3xl'>
+        <div className=' pt-10 pb-10 flex flex-wrap flex-row  max-xl:flex-col  justify-center items-center gap-10 max-w-3xl h-screen'>
             <ProjectCard
                 title='Weatherapp'
                 description='Acompanhe climas do mundo inteiro em tempo real.'
@@ -12,7 +12,7 @@ const Projects = () => {
             />
             <ProjectCard
                 title='Lightwiki'
-                description='Blog pessoal, com database própria e suporte a upload de imagens.'
+                description='Blog pessoal, com database própria e upload de imagens.'
                 githubLink='https://github.com/igorfrag/lightwiki-front'
                 img='/assets/lightwiki.png'
             />

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import IconComponent from '@/shared/Icons/IconComponent';
-import icons from '@/shared/Icons/icons';
+import { socials } from '@/shared/Icons/icons';
 
 interface ProjectCardProps {
     title: string;
@@ -32,18 +32,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
             <div className='flex flex-row items-center gap-4 justify-center mt-3'>
                 <a href={githubLink}>
-                    <IconComponent title='Github' path={icons[1].path} />
+                    <IconComponent title='Github' path={socials[1].path} />
                 </a>
                 {directLink ? (
                     <a href={directLink}>
                         <IconComponent
                             title='Link'
-                            path={icons[2].path}
+                            path={socials[3].path}
                             size={30}
                         />
                     </a>
                 ) : (
-                    <></>
+                    <div />
                 )}
             </div>
         </div>

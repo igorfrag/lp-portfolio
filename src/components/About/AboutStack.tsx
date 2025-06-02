@@ -1,5 +1,5 @@
 'use client';
-import icons from '@/shared/Icons/icons';
+import { icons } from '@/shared/Icons/icons';
 import { useState } from 'react';
 import { useWindowSize } from '@/hooks/useWindowSize';
 
@@ -25,8 +25,8 @@ const AboutStack = () => {
                     {stackText}
                 </p>
             </div>
-            {icons.slice(3).map((icon, index) => {
-                const angle = (2 * Math.PI * index) / (icons.length - 3);
+            {icons.map((icon, index) => {
+                const angle = (2 * Math.PI * index) / icons.length;
                 const x = center + radius * Math.cos(angle) - 40;
                 const y = center + radius * Math.sin(angle) - 40;
 
