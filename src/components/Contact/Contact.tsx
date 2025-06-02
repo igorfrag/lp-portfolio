@@ -9,25 +9,27 @@ const Contact = () => {
                     {socials.map((icon, index) => {
                         if (icon.link === null) return null;
                         return (
-                            <a
+                            <li
                                 key={index}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                href={
-                                    icon.title === 'Gmail'
-                                        ? 'mailto:' + icon.link
-                                        : icon.link
-                                }
+                                className='opacity-100 hover:opacity-80 hover:scale-125 transition ease-in'
                             >
-                                <li className='opacity-100 hover:opacity-80 hover:scale-125 transition ease-in'>
+                                <a
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    href={
+                                        icon.title === 'Gmail'
+                                            ? 'mailto:' + icon.link
+                                            : icon.link
+                                    }
+                                >
                                     <IconComponent
                                         title={icon.title}
                                         path={socials[index].path}
                                         size={50}
                                         color='white'
                                     />
-                                </li>
-                            </a>
+                                </a>
+                            </li>
                         );
                     })}
                 </ul>
