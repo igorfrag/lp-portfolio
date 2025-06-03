@@ -3,8 +3,10 @@ import { socials } from '../Icons/icons';
 
 const Header = () => {
     return (
-        <header className='bg-gray-800 text-white p-4 text-center justify-center flex border-b border-white w-screen max-md:pr-10 max-md:pl-10 fixed z-10'>
-            <nav className='flex gap-10 justify-between w-full max-w-5xl'>
+        <header
+            className={`left-0 right-0 bg-gray-800 text-white p-4 mr-4 text-center justify-center flex border-b border-white fixed z-10 max-md:hidden top-0  `}
+        >
+            <nav className='flex gap-10 justify-evenly w-full max-w-5xl'>
                 <ul className='flex flex-row gap-5 text-xl '>
                     <li className='opacity-100 hover:opacity-80'>
                         <a href='#sobre'>Sobre</a>
@@ -17,7 +19,7 @@ const Header = () => {
                         <a href='#contato'>Contato</a>
                     </li>
                 </ul>
-                <ul className='flex flex-row gap-6'>
+                <ul className='flex flex-row gap-6 max-lg:hidden'>
                     <li className='opacity-100 hover:opacity-80'>
                         <a
                             target='_blank'

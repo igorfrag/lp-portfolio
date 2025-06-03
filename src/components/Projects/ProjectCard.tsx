@@ -18,12 +18,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     img,
 }) => {
     return (
-        <div className=' bg-gray-800 w-[330px] aspect-square rounded-lg hover:scale-105 hover:shadow-lg transition-transform duration-200 hover:border p-10 max-sm:w-[200px] max-sm:h-[350px]'>
+        <div className=' bg-gray-800 w-[330px] snap-center aspect-square rounded-lg hover:scale-105 hover:shadow-lg transition-transform duration-200 hover:border p-10 max-sm:w-[200px] max-sm:h-[350px]'>
             <div className='flex flex-col items-center justify-center '>
                 <Image
                     src={img}
-                    width={150}
-                    height={150}
+                    width={120}
+                    height={120}
                     alt={title}
                     className='mb-3'
                 />
