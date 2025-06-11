@@ -1,0 +1,32 @@
+{
+    "HeroSection": {
+        "hello": "Olá, eu sou",
+        "name": "Igor.",
+        "callText": " Desenvolvo soluções Full-Stack eficientes e escaláveis"
+    },
+    "Navbar": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "contact": "Contato"
+    },
+    "About": {
+        "textOne": "Código limpo, design responsivo e paixão por boas interfaces.",
+        "textTwo": "Desenvolvo produtos digitais com atenção aos detalhes e tecnologias modernas.",
+        "click": "Clique em um item",
+        "docker": "Containerização de aplicações e ambientes de teste.",
+        "aws": "Administração de servidores EC2, armazenamento e banco de dados.",
+        "react": "Paginas dinâmicas, componentes reutilizáveis e uma experiência de usuário fluida.",
+        "next": "Aplicações web, com Server-Side Rendering e Static-Site Generation.",
+        "tailwind": "Design responsivo, utilitários de estilo e uma experiência de desenvolvimento rápida.",
+        "node": "Desenvolvimento de APIs, manipulação de dados e integração com bancos de dados.",
+        "typescript": "Tipagem estática e desenvolvimento escalável, perfeito para projetos em equipe."
+    },
+    "Projects": {
+        "title": "Projetos",
+        "weatherapp": "Acompanhe climas do mundo inteiro em tempo real.",
+        "lightwiki": "Blog pessoal, com database própria e upload de imagens."
+    },
+    "Contact": {
+        "contact": "Contate"
+    }
+}

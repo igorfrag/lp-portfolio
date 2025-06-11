@@ -1,0 +1,32 @@
+{
+    "HeroSection": {
+        "hello": "Hello, I am",
+        "name": "Igor.",
+        "callText": "Developer creating scalable and modern full-stack applications"
+    },
+    "Navbar": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "About": {
+        "textOne": "Clean code, responsive design and a passion for great user interfaces.",
+        "textTwo": "I develop applications with modern technologies and attention to detail  .",
+        "click": "Click an item",
+        "docker": "Application containers and test environments.",
+        "aws": "EC2 Servers and S3 Storage.",
+        "react": "Dynamic pages, reusable components and smooth user experience.",
+        "next": "Server-Side Rendering and Static-Site Generation.",
+        "tailwind": "Responsive design, themes and fast development experience.",
+        "node": "APIs, data manipulation and database integration.",
+        "typescript": "Static typing and scalability, great for team projects."
+    },
+    "Projects": {
+        "title": "Projects",
+        "weatherapp": "Track climate around the world in real time.",
+        "lightwiki": "Personal diary, with own database and image support."
+    },
+    "Contact": {
+        "contact": "Contact me"
+    }
+}

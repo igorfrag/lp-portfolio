@@ -31,11 +31,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <p className='text-center'>{description}</p>
             </div>
             <div className='flex flex-row items-center gap-4 justify-center mt-3'>
-                <a href={githubLink}>
+                <a href={githubLink} rel='noopener noreferrer' target='_blank'>
                     <IconComponent title='Github' path={socials[1].path} />
                 </a>
                 {directLink ? (
-                    <a href={directLink}>
+                    <a
+                        href={directLink}
+                        rel='noopener noreferrer '
+                        target='_blank'
+                    >
                         <IconComponent
                             title='Link'
                             path={socials[3].path}

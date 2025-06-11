@@ -1,9 +1,11 @@
 'use client';
 import { icons } from '@/shared/Icons/icons';
 import { useState, useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 const AboutStack = () => {
-    const [stackText, setStackText] = useState('Clique em um item');
+    const t = useTranslations('About');
+    const [stackText, setStackText] = useState(t('click'));
     const containerRef = useRef<HTMLDivElement>(null);
     const [size, setSize] = useState(300); // tamanho base do círculo
 
@@ -23,7 +25,6 @@ const AboutStack = () => {
 
     const center = size / 2;
     const radius = center - 10;
-
     return (
         <div
             ref={containerRef}
@@ -61,9 +62,7 @@ const AboutStack = () => {
                 return (
                     <div
                         key={icon.title}
-                        onClick={() =>
-                            setStackText(icon.text || 'Clique em um item')
-                        }
+                        onClick={() => setStackText(t(`${icon.text}`))}
                         className='absolute aspect-square w-20  max-sm:w-15 flex items-center justify-center flex-col bg-gray-800 text-white rounded-lg hover:scale-110 hover:shadow-lg transition-transform duration-100'
                         style={{ top: y, left: x }}
                     >

@@ -1,9 +1,11 @@
 import { socials } from '@/shared/Icons/icons';
 import IconComponent from '@/shared/Icons/IconComponent';
+import { useTranslations } from 'next-intl';
 const Contact = () => {
+    const t = useTranslations('Contact');
     return (
         <div className=' pt-10 pb-10 flex flex-col justify-center items-center gap-10 h-screen'>
-            <h1 className='text-3xl'>Contate-me</h1>
+            <h1 className='text-3xl'>{t('contact')}</h1>
             <div>
                 <ul className='flex flex-row gap-6'>
                     {socials.map((icon, index) => {
